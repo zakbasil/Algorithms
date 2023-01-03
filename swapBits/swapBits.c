@@ -2,10 +2,11 @@
 
 void swap(long x, short i, short j)
 {
-    if(((x>>i) & 1) != ((x>>j) & 1))
+
+    if(((x>>i) & 1) != ((x>>j) & 1)) // Checks if ith and jth bits are same or not.
     {
-        unsigned long mask = 1L << i | 1L << j;
-        x ^= mask;
+        unsigned long mask = 1L << i | 1L << j; // Swap only if bits are different. Use a mask to swap.
+        x ^= mask; // XOR with mask helps to swap. 
     }
     printf("%ld", x);
 

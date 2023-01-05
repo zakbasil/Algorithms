@@ -1,0 +1,1 @@
+Given a n bit word, determine the Parity; 0 if even parity, 1 if odd parity.

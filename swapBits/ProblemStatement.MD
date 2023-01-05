@@ -1,0 +1,1 @@
+Given a word of n bits, swap the ith and jth bits.

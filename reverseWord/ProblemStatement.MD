@@ -1,0 +1,1 @@
+Given an n bit word reverse the word in bitwise representation.

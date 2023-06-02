@@ -7,13 +7,13 @@ def purchase(stockData):
             temp = i
         result.append(max(i-temp,result[-1]))
     maxProfit = max(result)
+    print(result)
 
     maxSoFar = -10000
     for i in range(len(stockData)-1,-1,-1):
         maxSoFar = max(maxSoFar, stockData[i])
-        print(maxSoFar)
         finalResult = max(maxProfit, maxSoFar-stockData[i]+result[i-1])
-
+        print(finalResult)
     return(finalResult)
 
 

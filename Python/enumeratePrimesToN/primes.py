@@ -27,7 +27,7 @@ def fasterPrimesTo(n):
     return(primes)
 
 #slow method
-print(len(primesTo(100000000)))
+# print(len(primesTo(100000000)))
 
 #faster
 print(len(fasterPrimesTo(100000000)))

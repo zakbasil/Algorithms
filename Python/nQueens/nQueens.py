@@ -1,3 +1,4 @@
+7
 N = int(input("Enter the number:"))
 board = [[0 for _ in range(N)] for _ in range(N)]
 

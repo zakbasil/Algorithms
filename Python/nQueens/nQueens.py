@@ -1,4 +1,3 @@
-7
 N = int(input("Enter the number:"))
 board = [[0 for _ in range(N)] for _ in range(N)]
 
@@ -26,7 +25,7 @@ def nQueens(n):
                 board[i][j]=0
     return False
 
-nQueens(N)
+print(nQueens(N))
 for i in board:
     print(i)
 

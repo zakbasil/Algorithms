@@ -5,7 +5,7 @@ def palindrome(number):
     elif (number < 0):
         return(False)
     else:
-        numDigits = int(math.log10(number)) + 1
+        numDigits = int(math.log10(number)) + 1        
         MSD = 10**(numDigits-1)
         for _ in range(0,numDigits//2):
 

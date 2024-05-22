@@ -1,7 +1,5 @@
 fibDict = {1:0, 2:1}
-
 def fibonacci(num):
-    
     if (num<=0):
         print("invalid input ")
         

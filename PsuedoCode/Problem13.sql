@@ -1,4 +1,4 @@
-SELECT Department, sum(Salary) as Salary
+SELECT Department, sum(Salary) as SumSalary
 FROM employee
 GROUP BY department
-WHERE SUM(Salary) >= 50000;  
+HAVING SUM(Salary) >= 50000;

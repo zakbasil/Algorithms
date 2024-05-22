@@ -10,10 +10,7 @@ def removeDuplicates_loop(input_list):
         else:
             i += 1
         length = len(input_list)
-        
-
     return(input_list)
-
 
 
 input_list = list(map(int,input("Enter two numbers: ").rstrip().split(' ')))

@@ -8,15 +8,15 @@ class Demo{
     { 
         cout << "Default Constructor" << endl; 
     } 
+
     Demo(int a, int b):a(a),b(b)
     { 
-        cout << "parameterized constructor -values" << a  << " "<< b << endl; 
+cout << "parameterized constructor -values" <<a<< " "<<b<< endl; 
     } 
       
-}instance; 
+}dwehbfiwhyb(1,2); 
   
   
 int main() { 
-     
     return 0; 
 }

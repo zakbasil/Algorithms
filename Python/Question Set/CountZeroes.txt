@@ -1,0 +1,10 @@
+Question:
+Given a number n, determine the number of zeroes 
+in the number set [1,n].
+
+Example:
+1.  Input: 10
+    Output: 1
+
+2.  Input: 100
+    Output: 11

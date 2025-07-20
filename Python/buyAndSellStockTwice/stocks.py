@@ -1,21 +1,20 @@
 #Buy and sell a stock twice based on prices given in a List.
 def purchase(stockData):
-    temp = stockData[0]
-    result = [0]
+    minSoFar = stockData[0]
+    Forward = [0]
     for i in stockData:
-        if(i<temp):
-            temp = i
-        result.append(max(i-temp,result[-1]))
-    maxProfit = max(result)
-    print(result)
+        if(i<minSoFar):
+            minSoFar = i
+        Forward.append(max(i-minSoFar,Forward[-1]))
+    maxProfit = max(Forward)
+    print(Forward)
 
-    maxSoFar = -10000
+    maxSoFar = -float('inf')
     for i in range(len(stockData)-1,-1,-1):
         maxSoFar = max(maxSoFar, stockData[i])
-        finalResult = max(maxProfit, maxSoFar-stockData[i]+result[i-1])
-        print(finalResult)
-    return(finalResult)
+        maxProfit = max(maxProfit, maxSoFar-stockData[i]+Forward[i])
+    return(maxProfit)
 
 
-stockData = [12,11,13,9,12,8,14,13,15]
+stockData =  [310,337,275,260,270,290,230,255,250]
 print(purchase(stockData))

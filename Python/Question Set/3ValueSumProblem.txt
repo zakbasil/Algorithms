@@ -1,0 +1,12 @@
+Question:
+Design an algorithm that takes as input an array A[] and 
+a number k, and determine if there are three entries 
+in the array (Not necessarily distinct) which add up to 
+the specified number k.
+
+Example:
+1.  Input: A = 11,2,5,7,3; K = 21
+    Output: true
+
+2.  Input: A = 11,2,5,7,3; K = 22
+    Output: false

@@ -1,0 +1,14 @@
+Write a program to identify the 
+cycle in a graph.
+
+Example:
+number of edges 8
+0-1
+1-2
+2-3
+3-4
+4-5
+4-6 
+3-1
+ouput: True
+Cycle at 1-2-3-1

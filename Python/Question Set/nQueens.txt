@@ -1,0 +1,10 @@
+Question:
+Determine for a given number K, if K number of queens can 
+be places on chess board of size KxK in all non-attacking 
+positions.
+
+Example:
+1.  Input: K = 5
+    Output: true
+2.  Input: K = 3
+    Output: false

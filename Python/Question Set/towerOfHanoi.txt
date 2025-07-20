@@ -1,0 +1,7 @@
+Question:
+Implement Towers of Hanoi using Recursion.
+Input format is one line with an integer representing the number of rings.
+Output, print the sequence of the transformations.
+
+There are 3 towers, 2 empty and 1 with all the rings.
+Constraint: No larger ring must be placed above a smaller ring.[]

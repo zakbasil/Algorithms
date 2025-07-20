@@ -1,10 +1,10 @@
 def serachSortedArray(query,searchElement):
-    result = None
+    result = -1
 
     start = 0
     end = len(query)
 
-    while(True):
+    while(start <= end):
         mid = (start + end)//2
         if(query[mid] == searchElement):
             result = mid
@@ -14,7 +14,7 @@ def serachSortedArray(query,searchElement):
         else:
             start = mid
 
-    if(result):
+    if(result>-1):
         while(True):
             if(query[result] == query[result-1]):
                 result -= 1

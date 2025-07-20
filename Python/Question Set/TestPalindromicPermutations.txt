@@ -1,0 +1,7 @@
+Question:
+Given a string, test for pallindrome over any of its permutations.
+Example:
+1.  Input: 'edified'
+    Output: true
+    Explanation: 'deified' is one of the permuations that is 
+            pallindrome.

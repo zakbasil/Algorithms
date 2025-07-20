@@ -14,7 +14,7 @@ def isAttack(i,j):
     return False
 
 def nQueens(n):
-    if n==0:
+    if n==0:  
         return True
     for i in range(0,N):
         for j in range(0,N):

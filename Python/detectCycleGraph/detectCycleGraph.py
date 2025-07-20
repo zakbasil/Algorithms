@@ -3,6 +3,10 @@ class Graph():
         self.graph = {}
         self.V = vertices
  
+    def addNewNode(self):
+        self.V += 1
+
+    
     def addEdge(self, u, v):
         if u in self.graph.keys():
             self.graph[u].append(v)
@@ -18,9 +22,9 @@ class Graph():
 
         for neighbour in self.graph[v]:
             if visited[neighbour] == False:
-                if self.isCyclicUtil(neighbour, visited, recStack) == True:
+                if self.isCyclicUtil(neighbour, visited, recStack):
                     return True
-            elif recStack[neighbour] == True:
+            elif recStack[neighbour]:
                 return True
 
         recStack[v] = False
@@ -31,17 +35,19 @@ class Graph():
         visited = [False] * (self.V + 1)
         recStack = [False] * (self.V + 1)
         for node in self.graph.keys():
-            if visited[node] == False:
-                if self.isCyclicUtil(node, visited, recStack) == True:
+            if not visited[node]:
+                if self.isCyclicUtil(node, visited, recStack):
                     return True
         return False
  
 if __name__ == '__main__':
-    g = Graph(3)
-    g.addEdge(0, 1)
+    g = Graph(4)
+    g.addEdge(2, 1)
     g.addEdge(1, 2)
+    g.addEdge(4, 3)
+    g.addEdge(3, 4)
  
-    if g.isCyclic() == 1:
+    if g.isCyclic():
         print("Graph contains cycle")
     else:
         print("Graph doesn't contain cycle")

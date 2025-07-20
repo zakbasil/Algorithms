@@ -1,15 +1,15 @@
 #Buy and sell a stock once based on prices given in a List.
 #Find the difference between the lowest traversed value and store the max profit value
 def purchase(stockData):
-    temp = stockData[0]
-    result = 0
-    for i in stockData:
-        if(i<temp):
-            temp = i
-        if(result<(i-temp)):
-            result = i-temp
-    return(result)
+    currMin = stockData[0] #230
+    maxProfit = 0 # 30
+    for i in stockData: #i = 250
+        if(i<currMin):
+            currMin = i
+        if(maxProfit<(i-currMin)):
+            maxProfit = i-currMin
+    return(maxProfit) 
 
 
-stockData = [310,315,275,260,270,290,230,255,250]
+stockData = [215, 265, 250, 200, 240, 260, 230]
 print(purchase(stockData))

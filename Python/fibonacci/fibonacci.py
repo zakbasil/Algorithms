@@ -1,7 +1,6 @@
 def fibonacci(num):
-    
     if (num<=0):
-        print("invalid input ")
+        return("invalid input ")
         
     elif (num==1):
         return 0
@@ -14,4 +13,3 @@ def fibonacci(num):
 
 k = int(input("Enter a number:"))
 print("kth term is",fibonacci(k))
-
